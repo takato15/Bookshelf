@@ -1,0 +1,2 @@
+class Chugoku < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class Hokkaido < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class Kyusyu < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class Shikoku < ApplicationRecord
+end

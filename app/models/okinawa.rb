@@ -1,0 +1,2 @@
+class Okinawa < ApplicationRecord
+end

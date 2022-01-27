@@ -1,0 +1,2 @@
+class Kinki < ApplicationRecord
+end
