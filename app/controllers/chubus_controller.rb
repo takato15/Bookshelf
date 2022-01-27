@@ -1,0 +1,2 @@
+class ChubusController < ApplicationController
+end

@@ -1,0 +1,2 @@
+class ChugokusController < ApplicationController
+end

@@ -1,0 +1,2 @@
+module ChubusHelper
+end

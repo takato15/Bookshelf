@@ -1,0 +1,2 @@
+class HokkaidoesController < ApplicationController
+end

@@ -1,0 +1,2 @@
+class ShikokusController < ApplicationController
+end
