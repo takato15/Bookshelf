@@ -1,0 +1,2 @@
+class KyusyusController < ApplicationController
+end

@@ -1,0 +1,2 @@
+module TohokusHelper
+end

@@ -1,0 +1,2 @@
+class OkinawasController < ApplicationController
+end

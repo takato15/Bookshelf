@@ -1,0 +1,2 @@
+module ShikokusHelper
+end

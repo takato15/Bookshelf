@@ -1,0 +1,2 @@
+class KinkisController < ApplicationController
+end

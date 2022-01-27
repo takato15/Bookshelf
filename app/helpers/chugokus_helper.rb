@@ -1,0 +1,2 @@
+module ChugokusHelper
+end
