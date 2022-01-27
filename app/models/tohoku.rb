@@ -1,0 +1,2 @@
+class Tohoku < ApplicationRecord
+end
