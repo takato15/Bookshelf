@@ -85,6 +85,10 @@ ActiveRecord::Schema.define(version: 2022_01_27_164247) do
   end
 
   create_table "tohokus", force: :cascade do |t|
+    t.string "prefecture_name"
+    t.string "title"
+    t.text "caption"
+    t.float "evaluation"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -63,3 +63,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'kaminari', '~>1.2.1'
 gem 'enum_help'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
