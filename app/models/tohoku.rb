@@ -6,4 +6,12 @@ class Tohoku < ApplicationRecord
     akita: 3, yamagata: 4, fukushima: 5
   }
   
+  # バリデーション
+  with_options presence: true do
+    validates :prefecture_name
+    validates :title
+    validates :evaluation
+    validates :caption
+  end
+  
 end
