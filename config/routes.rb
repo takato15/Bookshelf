@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   resources :kinkis, except: [:update, :destroy, :edit]
   resources :chugokus, except: [:update, :destroy, :edit]
   resources :shikokus, except: [:update, :destroy, :edit]
-  resources :kyusyue, except: [:update, :destroy, :edit]
+  resources :kyusyus, except: [:update, :destroy, :edit]
   resources :okinawas, except: [:update, :destroy, :edit]
   
 end
