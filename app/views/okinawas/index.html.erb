@@ -1,11 +1,11 @@
 <div class="container">
 
-  <h2 class="prefectures-title"><%= "北海道 （全#{@hokkaidoes.count}件）" %></h2>
+  <h2 class="prefectures-title"><%= "沖縄県 （全#{@okinawas_all.count}件）" %></h2>
   
-  <% if @hokkaidoes.exists? %>
+  <% if @okinawas.exists? %>
 
     <div class="new-post">
-      <%= link_to new_hokkaido_path do %>
+      <%= link_to new_okinawa_path do %>
         <i class="fas fa-plus-square icon fa-2x"></i>
       <% end %>
     </div>
@@ -20,28 +20,34 @@
         </tr>
       </thead>
       <tbody>
-        <% @hokkaidoes.each do |hokkaido| %>
+        <% @okinawas.each do |okinawa| %>
           <tr>
-            <td class="place"><%= hokkaido.title %></td>
-            <td class="hokkaido-evaluation" data-score="<%= hokkaido.evaluation %>"></td>
-            <td class="evaluation">
+            <td class="place"><%= okinawa.title %></td>
+            <td class="okinawa-evaluation" data-score="<%= okinawa.evaluation %>"></td>
+            <td class="caption">
               <details class="caption-show">
                 <summary>詳細を開く</summary>
-                <%= simple_format(hokkaido.caption) %>
+                <%= simple_format(okinawa.caption) %>
               </details>
             </td>
-            <td class="date"><%= hokkaido.created_at.strftime('%Y年%m月%d日') %></td>
+            <td class="date"><%= okinawa.created_at.strftime('%Y年%m月%d日') %></td>
           </tr>
         <% end %>
       </tbody>
     </table>
     
     <div class="pagination">
-      <%= paginate @hokkaidoes %>
+      <%= paginate @okinawas %>
+    </div>
+    
+    <div class="back">
+      <%= link_to prefectures_path do %>
+        <span>都道府県一覧に戻る</span>
+      <% end %>
     </div>
     
     <script>
-      $('.hokkaido-evaluation').raty({
+      $('.okinawa-evaluation').raty({
         readOnly: true,
         starOn: "<%= asset_path('star-on.png') %>",
         starOff: "<%= asset_path('star-off.png') %>",
@@ -55,7 +61,7 @@
   <% else %>
       <div class="no-post">
         <h2>※投稿履歴がありません</h2>
-        <%= link_to new_hokkaido_path do %>
+        <%= link_to new_okinawa_path do %>
            <p class="action">こちらをクリックして投稿しよう！</p>
         <% end %>
       </div>

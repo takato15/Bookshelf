@@ -2,6 +2,7 @@ class TohokusController < ApplicationController
 
   def index
     @tohokus = Tohoku.all.order(created_at: :desc).page(params[:page]).per(10)
+    @tohokus_all = Tohoku.all
   end
 
   def new

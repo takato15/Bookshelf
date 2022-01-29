@@ -6,4 +6,12 @@ class Chubu < ApplicationRecord
     yamanashi: 4, nagano: 5, gihu: 6, shizuoka: 7, aichi: 8
   }
   
+  # バリデーション
+  with_options presence: true do
+    validates :prefecture_name
+    validates :title
+    validates :evaluation
+    validates :caption
+  end
+  
 end

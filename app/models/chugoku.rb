@@ -6,4 +6,12 @@ class Chugoku < ApplicationRecord
     hiroshima: 3, yamaguchi: 4
   }
   
+  # バリデーション
+  with_options presence: true do
+    validates :prefecture_name
+    validates :title
+    validates :evaluation
+    validates :caption
+  end
+  
 end

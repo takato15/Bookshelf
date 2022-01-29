@@ -1,6 +1,6 @@
 <div class="container">
 
-  <h2 class="prefectures-title"><%= "東北 （全#{@tohokus.count}件）" %></h2>
+  <h2 class="prefectures-title"><%= "東北地方 （全#{@tohokus_all.count}件）" %></h2>
 
   <% if @tohokus.exists? %>
 
@@ -26,7 +26,7 @@
             <td class="prefectures_name"><%= tohoku.prefecture_name_i18n %></td>
             <td class="place"><%= tohoku.title %></td>
             <td class="tohoku-evaluation" data-score="<%= tohoku.evaluation %>"></td>
-            <td class="evaluation">
+            <td class="caption">
               <details class="caption-show">
                 <summary>詳細を開く</summary>
                 <%= simple_format(tohoku.caption) %>
@@ -40,6 +40,12 @@
 
     <div class="pagination">
       <%= paginate @tohokus %>
+    </div>
+    
+    <div class="back">
+      <%= link_to prefectures_path do %>
+        <span>都道府県一覧に戻る</span>
+      <% end %>
     </div>
 
     <script>
