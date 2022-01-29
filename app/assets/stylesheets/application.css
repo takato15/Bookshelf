@@ -21,8 +21,12 @@
   }
 
   footer {
+    position: absolute; /*　変更*/
+    bottom: 0;
     background-color: #e1eec1;
     height: 100px;
+    width: 100%;
+    margin-bottom: -100px;
   }
 
   .footer {

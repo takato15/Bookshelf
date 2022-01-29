@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 2022_01_27_164247) do
 
   create_table "chubus", force: :cascade do |t|
-    t.string "prefecture_name"
+    t.integer "prefecture_name"
     t.string "title"
     t.text "caption"
     t.float "evaluation"
@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2022_01_27_164247) do
   end
 
   create_table "chugokus", force: :cascade do |t|
-    t.string "prefecture_name"
+    t.integer "prefecture_name"
     t.string "title"
     t.text "caption"
     t.float "evaluation"
@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 2022_01_27_164247) do
   end
 
   create_table "hokkaidos", force: :cascade do |t|
-    t.string "prefecture_name"
+    t.integer "prefecture_name"
     t.string "title"
     t.text "caption"
     t.float "evaluation"
@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(version: 2022_01_27_164247) do
   end
 
   create_table "kantos", force: :cascade do |t|
-    t.string "prefecture_name"
+    t.integer "prefecture_name"
     t.string "title"
     t.text "caption"
     t.float "evaluation"
@@ -49,7 +49,7 @@ ActiveRecord::Schema.define(version: 2022_01_27_164247) do
   end
 
   create_table "kinkis", force: :cascade do |t|
-    t.string "prefecture_name"
+    t.integer "prefecture_name"
     t.string "title"
     t.text "caption"
     t.float "evaluation"
@@ -58,7 +58,7 @@ ActiveRecord::Schema.define(version: 2022_01_27_164247) do
   end
 
   create_table "kyusyus", force: :cascade do |t|
-    t.string "prefecture_name"
+    t.integer "prefecture_name"
     t.string "title"
     t.text "caption"
     t.float "evaluation"
@@ -67,7 +67,7 @@ ActiveRecord::Schema.define(version: 2022_01_27_164247) do
   end
 
   create_table "okinawas", force: :cascade do |t|
-    t.string "prefecture_name"
+    t.integer "prefecture_name"
     t.string "title"
     t.text "caption"
     t.float "evaluation"
@@ -76,7 +76,7 @@ ActiveRecord::Schema.define(version: 2022_01_27_164247) do
   end
 
   create_table "shikokus", force: :cascade do |t|
-    t.string "prefecture_name"
+    t.integer "prefecture_name"
     t.string "title"
     t.text "caption"
     t.float "evaluation"
@@ -85,7 +85,7 @@ ActiveRecord::Schema.define(version: 2022_01_27_164247) do
   end
 
   create_table "tohokus", force: :cascade do |t|
-    t.string "prefecture_name"
+    t.integer "prefecture_name"
     t.string "title"
     t.text "caption"
     t.float "evaluation"
