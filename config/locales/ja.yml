@@ -73,3 +73,15 @@
       okinawa:
         prefecture_name:
           okinawa: "沖縄県"
+    
+    activerecord:
+      errors:
+        messages:
+          blank: "が入力されていません。"
+          required: "が選択されていません。"
+
+      attributes:
+        hokkaido:
+          evaluation: "評価"
+          title: "タイトル"
+          caption: "内容"

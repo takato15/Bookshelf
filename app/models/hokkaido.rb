@@ -5,4 +5,12 @@ class Hokkaido < ApplicationRecord
     hokkaido: 0
   }
 
+  # バリデーション
+  with_options presence: true do
+    validates :prefecture_name
+    validates :title
+    validates :evaluation
+    validates :caption
+  end
+
 end
