@@ -84,54 +84,54 @@
       attributes:
         hokkaido:
           evaluation: "評価"
-          title: "タイトル"
+          title: "場所"
           caption: "内容"
 
         tohoku:
           prefecture_name: "都道府県"
           evaluation: "評価"
-          title: "タイトル"
+          title: "場所"
           caption: "内容"
 
         kanto:
           prefecture_name: "都道府県"
           evaluation: "評価"
-          title: "タイトル"
+          title: "場所"
           caption: "内容"
 
         chubu:
           prefecture_name: "都道府県"
           evaluation: "評価"
-          title: "タイトル"
+          title: "場所"
           caption: "内容"
 
         kinki:
           prefecture_name: "都道府県"
           evaluation: "評価"
-          title: "タイトル"
+          title: "場所"
           caption: "内容"
 
         chugoku:
           prefecture_name: "都道府県"
           evaluation: "評価"
-          title: "タイトル"
+          title: "場所"
           caption: "内容"
 
         shikoku:
           prefecture_name: "都道府県"
           evaluation: "評価"
-          title: "タイトル"
+          title: "場所"
           caption: "内容"
 
         kyusyu:
           prefecture_name: "都道府県"
           evaluation: "評価"
-          title: "タイトル"
+          title: "場所"
           caption: "内容"
 
         okinawa:
           evaluation: "評価"
-          title: "タイトル"
+          title: "場所"
           caption: "内容"
 
     views:
