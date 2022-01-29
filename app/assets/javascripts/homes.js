@@ -6,7 +6,7 @@ document.addEventListener("turbolinks:load"
 , function () {
   $(function() {
   // 一旦hide()で隠してフェードインさせる
-    $('p').hide().fadeIn(3000);
+    $('p').hide().fadeIn(2000);
 
   });
 })

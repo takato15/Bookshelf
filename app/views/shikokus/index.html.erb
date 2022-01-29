@@ -1,18 +1,19 @@
 <div class="container">
 
-  <h2 class="prefectures-title"><%= "北海道 （全#{@hokkaidoes.count}件）" %></h2>
-  
-  <% if @hokkaidoes.exists? %>
+  <h2 class="prefectures-title"><%= "東北 （全#{@tohokus.count}件）" %></h2>
+
+  <% if @tohokus.exists? %>
 
     <div class="new-post">
-      <%= link_to new_hokkaido_path do %>
+      <%= link_to new_tohoku_path do %>
         <i class="fas fa-plus-square icon fa-2x"></i>
       <% end %>
     </div>
-  
+
     <table border="1">
       <thead>
         <tr>
+          <th class="prefectures_name">都道府県</th>
           <th class="place">場所</th>
           <th class="evaluation">評価</th>
           <th class="caption">内容</th>
@@ -20,28 +21,29 @@
         </tr>
       </thead>
       <tbody>
-        <% @hokkaidoes.each do |hokkaido| %>
+        <% @tohokus.each do |tohoku| %>
           <tr>
-            <td class="place"><%= hokkaido.title %></td>
-            <td class="hokkaido-evaluation" data-score="<%= hokkaido.evaluation %>"></td>
-            <td class="evaluation">
+            <td class="prefectures_name"><%= tohoku.prefecture_name_i18n %></td>
+            <td class="place"><%= tohoku.title %></td>
+            <td class="tohoku-evaluation" data-score="<%= tohoku.evaluation %>"></td>
+            <td class="caption">
               <details class="caption-show">
                 <summary>詳細を開く</summary>
-                <%= simple_format(hokkaido.caption) %>
+                <%= simple_format(tohoku.caption) %>
               </details>
             </td>
-            <td class="date"><%= hokkaido.created_at.strftime('%Y年%m月%d日') %></td>
+            <td class="date"><%= tohoku.created_at.strftime('%Y年%m月%d日') %></td>
           </tr>
         <% end %>
       </tbody>
     </table>
-    
+
     <div class="pagination">
-      <%= paginate @hokkaidoes %>
+      <%= paginate @tohokus %>
     </div>
-    
+
     <script>
-      $('.hokkaido-evaluation').raty({
+      $('.tohoku-evaluation').raty({
         readOnly: true,
         starOn: "<%= asset_path('star-on.png') %>",
         starOff: "<%= asset_path('star-off.png') %>",
@@ -51,11 +53,11 @@
         }
       });
     </script>
-    
+
   <% else %>
       <div class="no-post">
         <h2>※投稿履歴がありません</h2>
-        <%= link_to new_hokkaido_path do %>
+        <%= link_to new_tohoku_path do %>
            <p class="action">こちらをクリックして投稿しよう！</p>
         <% end %>
       </div>

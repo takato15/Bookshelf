@@ -3,7 +3,7 @@
       hokkaido:
         prefecture_name:
           hokkaido: "北海道"
-      
+
       tohoku:
         prefecture_name:
           aomori: "青森県"
@@ -12,7 +12,7 @@
           akita: "秋田県"
           yamagata: "山形県"
           fukushima: "福島県"
-      
+
       kanto:
         prefecture_name:
           ibaraki: "茨城県"
@@ -22,7 +22,7 @@
           chiba: "千葉県"
           tokyo: "東京都"
           kanagawa: "神奈川県"
-      
+
       chubu:
         prefecture_name:
           niigata: "新潟県"
@@ -34,7 +34,7 @@
           gihu: "岐阜県"
           shizuoka: "静岡県"
           aichi: "愛知県"
-      
+
       kinki:
         prefecture_name:
           mie: "三重県"
@@ -44,7 +44,7 @@
           hyogo: "兵庫県"
           nara: "奈良県"
           wakayama: "和歌山県"
-      
+
       chugoku:
         prefecture_name:
           tottori: "鳥取県"
@@ -52,14 +52,14 @@
           okayama: "岡山県"
           hiroshima: "広島県"
           yamaguchi: "山口県"
-      
+
       shikoku:
         prefecture_name:
           tokushima: "徳島県"
           kagawa: "香川県"
           ehime: "愛媛県"
           kochi: "高知県"
-      
+
       kyusyu:
         prefecture_name:
           fukuoka: "福岡県"
@@ -69,14 +69,15 @@
           oita: "大分県"
           miyazaki: "宮崎県"
           kagoshima: "鹿児島県"
-          
+
       okinawa:
         prefecture_name:
           okinawa: "沖縄県"
-    
+
     activerecord:
       errors:
         messages:
+          Prefecture name: "都道府県"
           blank: "が入力されていません。"
           required: "が選択されていません。"
 
@@ -85,7 +86,54 @@
           evaluation: "評価"
           title: "タイトル"
           caption: "内容"
-          
+
+        tohoku:
+          prefecture_name: "都道府県"
+          evaluation: "評価"
+          title: "タイトル"
+          caption: "内容"
+
+        kanto:
+          prefecture_name: "都道府県"
+          evaluation: "評価"
+          title: "タイトル"
+          caption: "内容"
+
+        chubu:
+          prefecture_name: "都道府県"
+          evaluation: "評価"
+          title: "タイトル"
+          caption: "内容"
+
+        kinki:
+          prefecture_name: "都道府県"
+          evaluation: "評価"
+          title: "タイトル"
+          caption: "内容"
+
+        chugoku:
+          prefecture_name: "都道府県"
+          evaluation: "評価"
+          title: "タイトル"
+          caption: "内容"
+
+        shikoku:
+          prefecture_name: "都道府県"
+          evaluation: "評価"
+          title: "タイトル"
+          caption: "内容"
+
+        kyusyu:
+          prefecture_name: "都道府県"
+          evaluation: "評価"
+          title: "タイトル"
+          caption: "内容"
+
+        okinawa:
+          evaluation: "評価"
+          title: "タイトル"
+          caption: "内容"
+
     views:
       pagination:
         first: '最初'

@@ -1,9 +1,9 @@
 <div class="container">
   
   <div class="validates">
-    <% if @hokkaido.errors.any? %>
-      <%= @hokkaido.errors.count %> 件の入力ミスがあります。
-      <% @hokkaido.errors.full_messages.each do |message| %><br>
+    <% if @chugoku.errors.any? %>
+      <%= @chugoku.errors.count %> 件の入力ミスがあります。
+      <% @chugoku.errors.full_messages.each do |message| %><br>
         ・<%= message %>
       <% end %>
     <% end %>
@@ -13,10 +13,10 @@
 
   <div class="article-new">
       
-    <%= form_with model: @hokkaido, url: hokkaidoes_path, local:true do |f| %>
+    <%= form_with model: @chugoku, url: chugokus_path, local:true do |f| %>
       <div class="article-item">
         <%= f.label :都道府県 %><br>
-        <%= f.select :prefecture_name, Hokkaido.prefecture_names.keys.map {|k| [I18n.t("enums.hokkaido.prefecture_name.#{k}"), k]} %>
+        <%= f.select :prefecture_name, Chugoku.prefecture_names.keys.map {|k| [I18n.t("enums.chugoku.prefecture_name.#{k}"), k]}, :prompt => "選択してください" %>
       </div>
       
       <div class="article-item">
@@ -43,7 +43,7 @@
         starOn: "<%= asset_path('star-on.png') %>",
         starOff: "<%= asset_path('star-off.png') %>",
         starHalf: "<%= asset_path('star-half.png') %>",
-        scoreName: 'hokkaido[evaluation]' //登録するモデル名とカラム名を記述
+        scoreName: 'chugoku[evaluation]' //登録するモデル名とカラム名を記述
       });
     </script>
        

@@ -73,9 +73,11 @@
 
   table {
     width: 1000px;
+    margin-bottom: 20px;
   }
 
-  .date, .place, .hokkaido-evaluation, .tohoku-evaluation, .prefectures_name {
+  .date, .place, .evaluation, .prefectures_name, 
+  .hokkaido-evaluation, .tohoku-evaluation, .kanto-evaluation {
     width: 200px;
     text-align: center;
   }
@@ -105,8 +107,15 @@
   .pagination {
     text-align: center;
     margin-top: 10px;
+    margin-bottom: 20px;
   }
   
   th {
     background-color: #f1eac3;
+  }
+  
+  .back {
+    width: 150px;
+    background-color: #b4c1d1;
+    margin: auto;
   }

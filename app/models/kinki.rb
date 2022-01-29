@@ -6,4 +6,12 @@ class Kinki < ApplicationRecord
     osaka: 3, hyogo: 4, nara: 5, wakayama: 6
   }
   
+  # バリデーション
+  with_options presence: true do
+    validates :prefecture_name
+    validates :title
+    validates :evaluation
+    validates :caption
+  end
+  
 end

@@ -2,6 +2,7 @@ class HokkaidoesController < ApplicationController
   
   def index
     @hokkaidoes = Hokkaido.all.order(created_at: :desc).page(params[:page]).per(10)
+    @hokkaidoes_all = Hokkaido.all
   end
   
   def new
