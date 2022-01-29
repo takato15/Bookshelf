@@ -1,0 +1,64 @@
+<div class="container">
+
+  <h2 class="prefectures-title"><%= "北海道 （全#{@hokkaidoes.count}件）" %></h2>
+  
+  <% if @hokkaidoes.exists? %>
+
+    <div class="new-post">
+      <%= link_to new_hokkaido_path do %>
+        <i class="fas fa-plus-square icon fa-2x"></i>
+      <% end %>
+    </div>
+  
+    <table border="1">
+      <thead>
+        <tr>
+          <th class="place">場所</th>
+          <th class="evaluation">評価</th>
+          <th class="caption">内容</th>
+          <th class="date">投稿日</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @hokkaidoes.each do |hokkaido| %>
+          <tr>
+            <td class="place"><%= hokkaido.title %></td>
+            <td class="hokkaido-evaluation" data-score="<%= hokkaido.evaluation %>"></td>
+            <td class="evaluation">
+              <details class="caption-show">
+                <summary>詳細を開く</summary>
+                <%= simple_format(hokkaido.caption) %>
+              </details>
+            </td>
+            <td class="date"><%= hokkaido.created_at.strftime('%Y年%m月%d日') %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+    
+    <div class="pagination">
+      <%= paginate @hokkaidoes %>
+    </div>
+    
+    <script>
+      $('.hokkaido-evaluation').raty({
+        readOnly: true,
+        starOn: "<%= asset_path('star-on.png') %>",
+        starOff: "<%= asset_path('star-off.png') %>",
+        starHalf: "<%= asset_path('star-half.png') %>",
+        score: function() {
+          return $(this).attr('data-score');
+        }
+      });
+    </script>
+    
+  <% else %>
+      <div class="no-post">
+        <h2>※投稿履歴がありません</h2>
+        <%= link_to new_hokkaido_path do %>
+           <p class="action">こちらをクリックして投稿しよう！</p>
+        <% end %>
+      </div>
+  <% end %>
+
+</div>
