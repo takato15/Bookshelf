@@ -1,40 +1,40 @@
 <div class="container">
   
-  <h2>依頼情報入力</h2>
-
-  <div class="hokkaido-new">
-      
-    <div class="validates">
-      <% if @hokkaido.errors.any? %>
-        <%= @hokkaido.errors.count %> 件の入力ミスがあります。
-        <% @hokkaido.errors.full_messages.each do |message| %><br>
-          ・<%= message %>
-        <% end %>
+  <div class="validates">
+    <% if @hokkaido.errors.any? %>
+      <%= @hokkaido.errors.count %> 件の入力ミスがあります。
+      <% @hokkaido.errors.full_messages.each do |message| %><br>
+        ・<%= message %>
       <% end %>
-    </div>
+    <% end %>
+  </div>
+  
+  <h2>記事作成</h2>
+
+  <div class="article-new">
       
     <%= form_with model: @hokkaido, url: hokkaidoes_path, local:true do |f| %>
-      <div>
+      <div class="article-item">
         <%= f.label :都道府県 %><br>
-        <%= f.select :prefecture_name, Hokkaido.prefecture_names.keys.map {|k| [I18n.t("enums.hokkaido.prefecture_name.#{k}"), k]}, :prompt => "選択してください" %>
+        <%= f.select :prefecture_name, Hokkaido.prefecture_names.keys.map {|k| [I18n.t("enums.hokkaido.prefecture_name.#{k}"), k]} %>
       </div>
       
-      <div>
-        <%= f.label :タイトル %><br>
+      <div class="article-item">
+        <%= f.label :タイトル, class: "article-title" %><br>
         <%= f.text_field :title, class: "title-form" %>
-      </div>
-      
-      <div>
-        <%= f.label :内容 %><br>
-        <%= f.text_field :caption, class: "caption-form" %>
       </div>
       
       <div id="evaluate_stars">
         <label>評価</label><br>
       </div>
       
-      <div class="actions mt-4">
-        <%= f.submit "新規登録", class: "btn btn-sm btn-dark" %>
+      <div class="article-item">
+        <%= f.label :内容 %><br>
+        <%= f.text_area :caption, class: "caption-form" %>
+      </div>
+      
+      <div class="article-item">
+        <%= f.submit "記事追加", class: "action" %>
       </div>
     <% end %>
     

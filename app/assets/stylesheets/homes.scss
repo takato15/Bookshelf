@@ -2,18 +2,31 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.top-title {
-  text-align: center;
+.back-image {
+  background-image: image-url('back.jpg');
+  height: 600px;
+  width: 100%;
+  background-size:cover;
 }
 
-.prefectures-index {
+.top-body {
+  height: 100%;
+  font-size: 30px;
+  color: white;
   text-align: center;
+  margin: 0;
+}
+
+.top-title {
+  margin: 0;
 }
 
 .prefectures {
   width: 150px;
   height: 50px;
   border-radius: 30px;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .homes-title {
@@ -26,7 +39,7 @@
   border-radius: 10px;
 }
 
-details {
+.detail {
   margin-left: 30px;
 }
 
