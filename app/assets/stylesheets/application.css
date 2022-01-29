@@ -101,6 +101,8 @@
 
   .no-post {
     text-align: center;
+    width: 300px;
+    margin: auto;
   }
 
   /*ページネーション*/
