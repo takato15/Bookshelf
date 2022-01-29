@@ -21,8 +21,12 @@
   }
 
   footer {
+    position: absolute; /*　変更*/
+    bottom: 0;
     background-color: #e1eec1;
     height: 100px;
+    width: 100%;
+    margin-bottom: -100px;
   }
 
   .footer {
@@ -40,46 +44,69 @@
     text-decoration:none;
     color: black;
   }
-  
+
   a:hover {
     color: #dddddd;
   }
-  
+
   .article-new {
     height: auto;
   }
-  
+
   .article-item, #evaluate_stars {
     margin-bottom: 20px;
   }
-  
+
   .action {
     margin-top: 20px;
     background-color: #b4c1d1;
   }
-  
+
   .caption-form {
     height: 100px;
     width: 300px;
   }
-  
+
   .validates {
     color: red;
   }
-  
+
   table {
-    width: 100%;
+    width: 1000px;
+  }
+
+  .date, .place, .hokkaido-evaluation, .tohoku-evaluation, .prefectures_name {
+    width: 200px;
+    text-align: center;
   }
   
+  .caption {
+    width: 500px;
+  }
+
   .caption-show {
     margin-left: 10px;
   }
-  
+
   .new-post {
     text-align: right;
     margin-bottom: 20px;
   }
-  
+
   .icon {
     color: #8C7051;
+  }
+
+  .no-post {
+    text-align: center;
+  }
+
+  /*ページネーション*/
+  .pagination {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  th {
+    background-color: #f1eac3;
   }
