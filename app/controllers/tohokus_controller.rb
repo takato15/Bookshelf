@@ -12,7 +12,7 @@ class TohokusController < ApplicationController
   def create
     @tohoku = Tohoku.new(tohoku_params)
     if @tohoku.save
-      redirect_to tohokus_path
+      redirect_to tohokus_path, notice: "記事を記載しました。"
     else
       render :new
     end

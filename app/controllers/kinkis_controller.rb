@@ -12,7 +12,7 @@ class KinkisController < ApplicationController
   def create
     @kinki = Kinki.new(kinki_params)
     if @kinki.save
-      redirect_to kinkis_path
+      redirect_to kinkis_path, notice: "記事を記載しました。"
     else
       render :new
     end

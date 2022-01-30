@@ -14,12 +14,16 @@
  *= require_self
  */
 
+
+/*ヘッダー*/
   header {
     background-color: #e1eec1;
     height: 100px;
     width: 100%;
   }
 
+
+/*フッター*/
   footer {
     background-color: #e1eec1;
     height: 100px;
@@ -33,10 +37,15 @@
 	  color: #b4c1d1;
   }
 
+
+/*コンテナ関連*/
   .container {
     margin: 50px;
   }
 
+
+/*リンク関連*/
+  /*リンクの下線消し*/
   a {
     text-decoration:none;
     color: black;
@@ -46,6 +55,8 @@
     color: #dddddd;
   }
 
+
+/*記事入力画面関連*/
   .article-new {
     height: auto;
   }
@@ -68,9 +79,15 @@
     color: red;
   }
 
+
+/*各一覧ページ関連*/
   table {
     width: 1000px;
     margin-bottom: 20px;
+  }
+    
+  th {
+    background-color: #f1eac3;
   }
 
   .date, .place, .evaluation, .prefectures_name, 
@@ -87,6 +104,7 @@
     margin-left: 10px;
   }
 
+  /*新規投稿アイコン*/
   .new-post {
     text-align: right;
     margin-bottom: 20px;
@@ -101,20 +119,24 @@
     width: 300px;
     margin: auto;
   }
-
-  /*ページネーション*/
-  .pagination {
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-  
-  th {
-    background-color: #f1eac3;
-  }
   
   .back {
     width: 150px;
     background-color: #b4c1d1;
     margin: auto;
+  }
+
+
+/*ページネーション関連*/
+  .pagination {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+
+/*フラッシュメッセージ*/
+  .flash {
+    color: #615CFF;
+    margin-top: 20px;
   }
