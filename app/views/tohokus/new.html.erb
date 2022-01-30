@@ -16,7 +16,8 @@
     <%= form_with model: @tohoku, url: tohokus_path, local:true do |f| %>
       <div class="article-item">
         <%= f.label :都道府県 %><br>
-        <%= f.select :prefecture_name, Tohoku.prefecture_names.keys.map {|k| [I18n.t("enums.tohoku.prefecture_name.#{k}"), k]}, :prompt => "選択してください" %>
+        <%= f.select :prefecture_name, Tohoku.prefecture_names.keys.map {|k| [I18n.t("enums.tohoku.prefecture_name.#{k}"), k]}
+        %>
       </div>
       
       <div class="article-item">
