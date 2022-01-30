@@ -12,7 +12,7 @@ class ShikokusController < ApplicationController
   def create
     @shikoku = Shikoku.new(shikoku_params)
     if @shikoku.save
-      redirect_to shikokus_path
+      redirect_to shikokus_path, notice: "記事を記載しました。"
     else
       render :new
     end

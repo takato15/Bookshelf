@@ -12,7 +12,7 @@ class KantoesController < ApplicationController
   def create
     @kanto = Kanto.new(kanto_params)
     if @kanto.save
-      redirect_to kantoes_path
+      redirect_to kantoes_path, notice: "記事を記載しました。"
     else
       render :new
     end

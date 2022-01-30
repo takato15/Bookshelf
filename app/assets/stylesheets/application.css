@@ -133,3 +133,10 @@
     margin-top: 10px;
     margin-bottom: 20px;
   }
+
+
+/*フラッシュメッセージ*/
+  .flash {
+    color: #615CFF;
+    margin-top: 20px;
+  }

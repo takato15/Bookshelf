@@ -12,7 +12,7 @@ class HokkaidoesController < ApplicationController
   def create
     @hokkaido = Hokkaido.new(hokkaido_params)
     if @hokkaido.save
-      redirect_to hokkaidoes_path
+      redirect_to hokkaidoes_path, notice: "記事を記載しました。"
     else
       render :new
     end

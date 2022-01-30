@@ -12,7 +12,7 @@ class OkinawasController < ApplicationController
   def create
     @okinawa = Okinawa.new(okinawa_params)
     if @okinawa.save
-      redirect_to okinawas_path
+      redirect_to okinawas_path, notice: "記事を記載しました。"
     else
       render :new
     end

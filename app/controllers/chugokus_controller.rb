@@ -12,7 +12,7 @@ class ChugokusController < ApplicationController
   def create
     @chugoku = Chugoku.new(chugoku_params)
     if @chugoku.save
-      redirect_to chugokus_path
+      redirect_to chugokus_path, notice: "記事を記載しました。"
     else
       render :new
     end

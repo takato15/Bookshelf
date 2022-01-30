@@ -12,7 +12,7 @@ class KyusyusController < ApplicationController
   def create
     @kyusyu = Kyusyu.new(kyusyu_params)
     if @kyusyu.save
-      redirect_to kyusyus_path
+      redirect_to kyusyus_path, notice: "記事を記載しました。"
     else
       render :new
     end
