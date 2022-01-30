@@ -2,47 +2,51 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.back-image {
-  background-image: image-url('back.jpg');
-  height: 80vh;
-  width: 100%;
-  background-size: cover;
-}
-
-.top-body {
-  height: 100%;
-  font-size: 30px;
-  color: white;
-  text-align: center;
-  margin: 0;
-}
-
-.top-title {
-  margin: 0;
-}
-
-.prefectures {
-  width: 150px;
-  height: 50px;
-  border-radius: 30px;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.homes-title {
-  text-decoration: underline;
-}
-
-.locals {
-  background-color: #FFF0DB;
-  margin-left: 10px;
-  border-radius: 10px;
-}
-
-.detail {
-  margin-left: 30px;
-}
-
-h3 {
-  margin-bottom: 0px;
-}
+// TOPページ関連
+  // 背景画像
+  .back-image {
+    background-image: image-url('back.jpg');
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+  }
+  
+  .top-body {
+    height: 100%;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .top-title {
+    margin: 0;
+  }
+  
+  .prefectures {
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  
+// 都道府県一覧ページ関連
+  .homes-title {
+    text-decoration: underline;
+  }
+  
+  .locals {
+    background-color: #FFF0DB;
+    margin-left: 10px;
+    border-radius: 10px;
+  }
+  
+  .detail {
+    margin-left: 30px;
+  }
+  
+  h3 {
+    margin-bottom: 0px;
+  }
